@@ -2,48 +2,33 @@ import { About, Blog, Gallery, Home, Newsletter, Person, Social, Work } from "@/
 import { Line, Row, Text } from "@once-ui-system/core";
 
 const person: Person = {
-  firstName: "Selene",
-  lastName: "Yu",
-  name: `Selene Yu`,
-  role: "Design Engineer",
+  firstName: "Abdelrahman",
+  lastName: "Ibrahim",
+  name: `Abdelrahman Ibrahim`,
+  role: "Energy Systems Engineer",
   avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  email: "abd.m.elsayed@gmail.com",
+  location: "Europe/Berlin", // IANA time zone identifier
+  languages: ["English", "German", "Arabic"],
 };
 
 const newsletter: Newsletter = {
-  display: true,
+  display: false, // Set to true if you want newsletter section
   title: <>Subscribe to {person.firstName}'s Newsletter</>,
-  description: <>My weekly newsletter about creativity and engineering</>,
+  description: <>Weekly insights on energy systems, Python, and renewable energy optimization</>,
 };
 
 const social: Social = [
-  // Links are automatically displayed.
-  // Import new icons in /once-ui/icons.ts
-  // Set essentials: true for links you want to show on the about page
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system",
+    link: "https://github.com/mrgraphic00-design",
     essential: true,
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
-    essential: true,
-  },
-  {
-    name: "Instagram",
-    icon: "instagram",
-    link: "https://www.instagram.com/once_ui/",
-    essential: false,
-  },
-  {
-    name: "Threads",
-    icon: "threads",
-    link: "https://www.threads.com/@once_ui",
+    link: "https://www.linkedin.com/in/abdelrahman-ibrahim-0b9b80166/", 
     essential: true,
   },
   {
@@ -60,24 +45,24 @@ const home: Home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
+  headline: <>Energy Systems Engineer & Python Developer</>,
   featured: {
     display: true,
     title: (
       <Row gap="12" vertical="center">
-        <strong className="ml-4">Once UI</strong>{" "}
+        <strong className="ml-4">Featured Project</strong>{" "}
         <Line background="brand-alpha-strong" vert height="20" />
         <Text marginRight="4" onBackground="brand-medium">
-          Featured work
+          Master's Thesis
         </Text>
       </Row>
     ),
-    href: "/work/building-once-ui-a-customizable-design-system",
+    href: "/work/campus-energy-optimization",
   },
   subline: (
     <>
-    I'm Selene, a design engineer at <Text as="span" size="xl" weight="strong">ONCE UI</Text>, where I craft intuitive <br /> user experiences. After hours, I build my own projects.
-</>
+      I'm Abdelrahman, an M.Eng. Energy Engineering student at <Text as="span" size="xl" weight="strong">OTH Amberg-Weiden</Text>, specializing in energy system <br /> modeling and optimization using Python frameworks like PyPSA and Oemof.
+    </>
   ),
 };
 
@@ -88,13 +73,13 @@ const about: About = {
   description: `Meet ${person.name}, ${person.role} from ${person.location}`,
   tableOfContent: {
     display: true,
-    subItems: false,
+    subItems: true,
   },
   avatar: {
     display: true,
   },
   calendar: {
-    display: true,
+    display: false, // Set to true if you want calendar booking
     link: "https://cal.com",
   },
   intro: {
@@ -102,52 +87,72 @@ const about: About = {
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        Abdelrahman is a Berlin-based energy systems engineer with a passion for accelerating the energy transition through data-driven optimization. His work focuses on renewable energy integration, sector coupling, and Python-based energy system modeling. Currently completing his Master's thesis on techno-economic campus energy optimization at OTH Amberg-Weiden.
       </>
     ),
   },
   work: {
-    display: true, // set to false to hide this section
+    display: true,
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "OTH Amberg-Weiden",
+        timeframe: "Feb 2026 - Aug 2026",
+        role: "Master's Thesis - Energy System Optimization",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            Techno-economic optimization of campus energy system using <Text as="span" weight="strong">PyPSA</Text> and <Text as="span" weight="strong">Oemof</Text> frameworks, achieving up to 40% CO₂ reduction potential.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Load profile analysis and time-series data processing with Python (Pandas, NumPy) for electrical and thermal demand optimization.
+          </>,
+          <>
+            Component sizing for PV arrays, battery storage, and heat pumps using linear optimization and sector coupling integration.
           </>,
         ],
-        images: [
-          // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
-        ],
+        images: [],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "First Co. for Industrial Development S.A.E.",
+        timeframe: "Nov 2023 - Mar 2024",
+        role: "Mechanical Engineer",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            Responsible for mechanical maintenance of BHS and TCY corrugated cardboard machinery, ensuring smooth production operations.
           </>,
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            Implemented preventive maintenance plans, reducing equipment downtime by approximately 15%.
+          </>,
+          <>
+            Conducted fault analysis and technical improvements to enhance reliability and production efficiency.
+          </>,
+        ],
+        images: [],
+      },
+      {
+        company: "Alexandria Shipyard",
+        timeframe: "Sep 2022",
+        role: "Engineering Intern",
+        achievements: [
+          <>
+            Worked on shipbuilding phases with focus on energy efficiency and operation of pumps, compressors, and energy-intensive equipment.
+          </>,
+          <>
+            Supported quality assurance measures including NDT and hydrostatic testing, plus pipeline production for ship propulsion systems.
+          </>,
+        ],
+        images: [],
+      },
+      {
+        company: "ADES (Oil & Gas)",
+        timeframe: "Aug 2022",
+        role: "Engineering Intern",
+        achievements: [
+          <>
+            Hands-on experience with onshore/offshore drilling technologies and analysis of Blowout Preventer (BOP) systems.
+          </>,
+          <>
+            Participated in diesel engine overhaul for performance optimization and applied industry safety standards.
           </>,
         ],
         images: [],
@@ -155,150 +160,43 @@ const about: About = {
     ],
   },
   studies: {
-    display: true, // set to false to hide this section
-    title: "Studies",
+    display: true,
+    title: "Education",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        name: "Ostbayerische Technische Hochschule Amberg-Weiden",
+        description: <>M.Eng. Internationale Energietechnik (International Energy Engineering) – Expected graduation: August 2026</>,
       },
       {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "Mansoura University, Egypt",
+        description: <>B.Sc. Maschinenbau (Mechanical Engineering) – GPA: 2.3 (Good) – Bachelor thesis: Formula Student race car design (95%)</>,
       },
     ],
   },
   technical: {
-    display: true, // set to false to hide this section
-    title: "Technical skills",
+    display: true,
+    title: "Technical Skills",
     skills: [
       {
-        title: "Figma",
+        title: "Energy System Modeling",
         description: (
-          <>Able to prototype in Figma with Once UI with unnatural speed.</>
+          <>Specialized in energy system optimization using PyPSA and Oemof frameworks for LCOE analysis, sector coupling, and load profile analysis.</>
         ),
         tags: [
           {
-            name: "Figma",
-            icon: "figma",
-          },
-        ],
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
+            name: "PyPSA",
+            icon: "python",
           },
           {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
+            name: "Oemof",
+            icon: "python",
           },
         ],
+        images: [],
       },
       {
-        title: "Next.js",
+        title: "Python Programming",
         description: (
-          <>Building next gen apps with Next.js + Once UI + Supabase.</>
+          <>Proficient in Python for data analysis, mathematical optimization, and time-series processing using Pandas, NumPy, and Matplotlib.</>
         ),
-        tags: [
-          {
-            name: "JavaScript",
-            icon: "javascript",
-          },
-          {
-            name: "Next.js",
-            icon: "nextjs",
-          },
-          {
-            name: "Supabase",
-            icon: "supabase",
-          },
-        ],
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
-      },
-    ],
-  },
-};
-
-const blog: Blog = {
-  path: "/blog",
-  label: "Blog",
-  title: "Writing about design and tech...",
-  description: `Read what ${person.name} has been up to recently`,
-  // Create new blog posts by adding a new .mdx file to app/blog/posts
-  // All posts will be listed on the /blog route
-};
-
-const work: Work = {
-  path: "/work",
-  label: "Work",
-  title: `Projects – ${person.name}`,
-  description: `Design and dev projects by ${person.name}`,
-  // Create new project pages by adding a new .mdx file to app/blog/posts
-  // All projects will be listed on the /home and /work routes
-};
-
-const gallery: Gallery = {
-  path: "/gallery",
-  label: "Gallery",
-  title: `Photo gallery – ${person.name}`,
-  description: `A photo collection by ${person.name}`,
-  // Images by https://lorant.one
-  // These are placeholder images, replace with your own
-  images: [
-    {
-      src: "/images/gallery/horizontal-1.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/vertical-4.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/horizontal-3.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/vertical-1.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/vertical-2.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/horizontal-2.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/horizontal-4.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/vertical-3.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-  ],
-};
-
-export { person, social, newsletter, home, about, blog, work, gallery };
+        
