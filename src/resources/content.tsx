@@ -8,7 +8,7 @@ const person: Person = {
   role: "Master's Student in Energy Engineering & Mechanical Engineer",
   avatar: "/images/avatar.jpg",
   email: "abd.m.elsayed@gmail.com",
-  location: "Berlin/Germany",
+  location: "Europe/Berlin",
   languages: ["Arabic", "English", "German"],
 };
 
