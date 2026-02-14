@@ -46,6 +46,11 @@ const home: Home = {
   title: "Abdelrahman Ibrahim Portfolio",
   description: "Portfolio website showcasing my work as an Energy Systems Engineer",
   headline: <>Energy Systems Engineer and Python Developer</>,
+  featured: {
+    display: true,
+    title: <>Featured Project</>,
+    href: "/work",
+  },
   subline: <>M.Eng. Energy Engineering student specializing in energy system modeling and optimization using Python frameworks like PyPSA and Oemof.</>,
 };
 
