@@ -45,8 +45,8 @@ const home: Home = {
   label: "Home",
   title: "Abdelrahman Ibrahim Portfolio",
   description: "Portfolio website showcasing my work as an Energy Systems Engineer",
-  headline: <>Energy Systems Engineer</>,
-  subline: <>M.Eng. Energy Engineering student specializing in energy system modeling and optimization using Python.</>,
+  headline: <>Energy Systems Engineer and Python Developer</>,
+  subline: <>M.Eng. Energy Engineering student specializing in energy system modeling and optimization using Python frameworks like PyPSA and Oemof.</>,
 };
 
 const about: About = {
@@ -68,7 +68,7 @@ const about: About = {
   intro: {
     display: true,
     title: "Introduction",
-    description: <>Energy systems engineer specializing in renewable energy integration and Python-based optimization.</>,
+    description: <>Energy systems engineer specializing in renewable energy integration, sector coupling, and Python-based optimization frameworks. Currently completing Master thesis on techno-economic campus energy optimization.</>,
   },
   work: {
     display: true,
@@ -79,9 +79,10 @@ const about: About = {
         timeframe: "Feb 2026 - Aug 2026",
         role: "Master Thesis - Energy System Optimization",
         achievements: [
-          <>Techno-economic optimization of campus energy system using PyPSA and Oemof</>,
-          <>Load profile analysis with Python Pandas and NumPy</>,
-          <>Achieved up to 40 percent CO2 reduction potential</>,
+          <>Techno-economic optimization of campus energy system using PyPSA and Oemof frameworks</>,
+          <>Load profile analysis and time-series data processing with Python Pandas and NumPy</>,
+          <>Component sizing for PV arrays, battery storage, and heat pumps using linear optimization</>,
+          <>Achieved up to 40 percent CO2 reduction potential in optimized configurations</>,
         ],
         images: [],
       },
@@ -90,8 +91,29 @@ const about: About = {
         timeframe: "Nov 2023 - Mar 2024",
         role: "Mechanical Engineer",
         achievements: [
-          <>Mechanical maintenance of BHS and TCY corrugated cardboard machinery</>,
-          <>Implemented preventive maintenance plans reducing downtime by 15 percent</>,
+          <>Responsible for mechanical maintenance of BHS and TCY corrugated cardboard machinery</>,
+          <>Conducted fault analysis and repairs ensuring smooth production operations</>,
+          <>Implemented preventive maintenance plans reducing downtime by approximately 15 percent</>,
+        ],
+        images: [],
+      },
+      {
+        company: "Alexandria Shipyard",
+        timeframe: "Sep 2022",
+        role: "Engineering Intern",
+        achievements: [
+          <>Worked on shipbuilding phases with focus on energy efficiency and equipment maintenance</>,
+          <>Quality assurance measures including NDT and hydrostatic testing</>,
+        ],
+        images: [],
+      },
+      {
+        company: "ADES Oil and Gas",
+        timeframe: "Aug 2022",
+        role: "Engineering Intern",
+        achievements: [
+          <>Hands-on experience with onshore and offshore drilling technologies</>,
+          <>Analysis of Blowout Preventer systems and safety standards application</>,
         ],
         images: [],
       },
@@ -103,11 +125,11 @@ const about: About = {
     institutions: [
       {
         name: "OTH Amberg-Weiden",
-        description: <>M.Eng. International Energy Engineering - Expected 2026</>,
+        description: <>M.Eng. International Energy Engineering - Expected graduation August 2026</>,
       },
       {
         name: "Mansoura University Egypt",
-        description: <>B.Sc. Mechanical Engineering - GPA 2.3</>,
+        description: <>B.Sc. Mechanical Engineering - GPA 2.3 - Bachelor thesis on Formula Student race car design achieved 95 percent</>,
       },
     ],
   },
@@ -117,17 +139,22 @@ const about: About = {
     skills: [
       {
         title: "Energy System Modeling",
-        description: <>PyPSA, Oemof, LCOE analysis, sector coupling, load profile analysis</>,
+        description: <>PyPSA framework, Oemof, LCOE analysis, sector coupling, load profile analysis, renewable energy integration</>,
         images: [],
       },
       {
-        title: "Programming",
-        description: <>Python with Pandas, NumPy, Matplotlib for data analysis and optimization</>,
+        title: "Programming and Data Analysis",
+        description: <>Python with Pandas, NumPy, and Matplotlib for data analysis, mathematical optimization, and time-series processing</>,
         images: [],
       },
       {
-        title: "Simulation Tools",
-        description: <>Polysun for PV systems, ANSYS FEA basics, SolidWorks CAD</>,
+        title: "Simulation and Engineering Tools",
+        description: <>Polysun for PV system simulation, ANSYS FEA basics, SolidWorks with CSWA, CSWP, and CSWA-WD certifications</>,
+        images: [],
+      },
+      {
+        title: "Languages",
+        description: <>Arabic native, English C1 fluent, German B1 intermediate working towards B2</>,
         images: [],
       },
     ],
@@ -145,14 +172,14 @@ const work: Work = {
   path: "/work",
   label: "Work",
   title: "Projects - Abdelrahman Ibrahim",
-  description: "Energy engineering and optimization projects",
+  description: "Energy engineering and optimization projects by Abdelrahman Ibrahim",
 };
 
 const gallery: Gallery = {
   path: "/gallery",
   label: "Gallery",
   title: "Photo gallery - Abdelrahman Ibrahim",
-  description: "A photo collection",
+  description: "A photo collection by Abdelrahman Ibrahim",
   images: [],
 };
 
