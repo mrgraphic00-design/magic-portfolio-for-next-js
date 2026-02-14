@@ -8,7 +8,7 @@ const person: Person = {
   role: "Master's Student in Energy Engineering & Mechanical Engineer",
   avatar: "/images/avatar.jpg",
   email: "abd.m.elsayed@gmail.com",
-  location: "Europe/Berlin",
+  location: "Berlin/Germany",
   languages: ["Arabic", "English", "German"],
 };
 
@@ -49,15 +49,15 @@ const home: Home = {
   path: "/",
   image: "/images/og/home.jpg",
   label: "Home",
-  title: "Abdelrahman Ibrahim - Energy Engineering Student",
-  description: "Energy system optimization using Python",
-  headline: <>Energy Management Systems using Python</>,
+  title: "Abdelrahman Ibrahim",
+  description: "Master's Student in Energy Engineering & Mechanical Engineer",
+  headline: <>Abdelrahman Ibrahim</>,
   featured: {
     display: false,
     title: <>Featured</>,
     href: "/work",
   },
-  subline: <></>,
+  subline: <>Master's Student in Energy Engineering & Mechanical Engineer</>,
 };
 
 const about: About = {
@@ -78,12 +78,12 @@ const about: About = {
   },
   intro: {
     display: true,
-    title: "Introduction",
+    title: "Summary",
     description: <>I am currently pursuing a Master of Engineering in International Energy Engineering at OTH Amberg-Weiden, Germany (expected graduation: Autumn 2026), with a strong focus on energy management, smart grids, and solar energy integration. My studies emphasize the development of sustainable and intelligent energy systems that support the transition toward a cleaner and more efficient global energy landscape. With a background in Mechanical Engineering, I bring a solid technical foundation in power generation, industrial systems, and process optimization. My academic and professional experiences have strengthened my expertise in energy system analysis, renewable integration, and data-driven energy management solutions. I am particularly interested in leveraging digital tools and automation to enhance the performance and reliability of modern energy infrastructures.</>,
   },
   work: {
     display: true,
-    title: "Work Experience",
+    title: "Professional Experience",
     experiences: [
       {
         company: "OTH Amberg-Weiden",
@@ -102,10 +102,10 @@ const about: About = {
         timeframe: "Nov 2023 - Mar 2024",
         role: "Mechanical Engineer",
         achievements: [
-          <>Directed comprehensive mechanical maintenance for BHS and TCY corrugated cardboard production lines</>,
-          <>Executed expert troubleshooting and diagnostics, rapidly resolving complex mechanical failures</>,
-          <>Pioneered proactive preventive maintenance schedules significantly improving machinery reliability</>,
-          <>Championed precision engineering improvements optimizing production output</>,
+          <>Directed comprehensive mechanical maintenance for BHS and TCY corrugated cardboard production lines including Bobst SPO160, DF924, P1600, and MarquipWardUnited machines</>,
+          <>Executed expert troubleshooting and diagnostics, rapidly resolving complex mechanical failures and effectively minimizing production downtime</>,
+          <>Pioneered and implemented proactive preventive maintenance schedules, significantly improving machinery reliability and enhancing operational efficiency</>,
+          <>Championed precision engineering and efficiency improvements, optimizing production output and reducing operational waste</>,
         ],
         images: [],
       },
@@ -116,12 +116,12 @@ const about: About = {
     title: "Education",
     institutions: [
       {
-        name: "OTH Amberg-Weiden, Germany",
-        description: <>M.Eng. International Energy Engineering - Expected graduation: August 2026. Projects: Energy Management System Design using Python (Pandas, NumPy); Solar PV System Simulation using Polysun</>,
+        name: "Ostbayerische Technische Hochschule Amberg-Weiden, Germany",
+        description: <>M.Eng. International Energy Engineering | March 2024 - Present (Expected graduation: August 2026). Projects: Energy Management System Design for a Residential City Quarter using Python (Pandas, NumPy); Solar PV System Simulation using Polysun with system performance and CO₂ footprint calculations</>,
       },
       {
         name: "Mansoura University, Egypt",
-        description: <>B.Sc. Mechanical Power Engineering (Sep 2018 - Jul 2023) - Final Grade: Very Good (GPA 2.3) - Thesis: Design of Formula Student Race Car (95%)</>,
+        description: <>B.Sc. Mechanical Power Engineering | September 2018 - July 2023. Final Grade: Very Good (GPA: 2.3). Thesis: Design of Formula Student Race Car (Achieved Excellent Grade, 95%)</>,
       },
     ],
   },
@@ -131,27 +131,27 @@ const about: About = {
     skills: [
       {
         title: "Energy System Modeling & Optimization",
-        description: <>PyPSA framework • Oemof • LCOE analysis • Sector coupling • Load profile analysis • Renewable energy integration • Mathematical optimization and linear programming</>,
+        description: <>PyPSA framework for power system analysis • Oemof for energy system modeling • LCOE analysis and economic evaluation • Sector coupling and integrated energy systems • Load profile analysis and demand forecasting • Renewable energy integration strategies • Mathematical optimization and linear programming</>,
         images: [],
       },
       {
         title: "Programming & Data Analysis",
-        description: <>Python • Pandas • NumPy • Matplotlib • Time-series analysis • Energy data analytics • Mathematical modeling</>,
+        description: <>Python for scientific computing and data analysis • Pandas and NumPy for data manipulation • Matplotlib for visualization • Time-series analysis and processing • Energy data analytics • Mathematical modeling and simulation</>,
         images: [],
       },
       {
         title: "Engineering Software & Simulation",
-        description: <>Polysun • ANSYS • SolidWorks (CSWP, CSWP-WD, CSWA) • AutoCAD</>,
+        description: <>Polysun for PV system simulation and performance analysis • ANSYS for FEA structural analysis (Basic) • SolidWorks (CSWP, CSWP-WD, CSWA certifications) • AutoCAD (Basic)</>,
         images: [],
       },
       {
         title: "Maintenance & Manufacturing",
-        description: <>Lean Six Sigma Black Belt • Preventive and predictive maintenance • Troubleshooting • Non-Destructive Testing (NDT) • Quality Control • Process optimization • Hydraulic systems • Rotating equipment</>,
+        description: <>Lean Six Sigma Black Belt certified • Preventive and predictive maintenance strategies • Troubleshooting and root cause analysis • Non-Destructive Testing (NDT) • Quality Control and assurance • Process optimization and waste reduction • Hydraulic and pneumatic systems • Rotating equipment maintenance (pumps, compressors, turbines)</>,
         images: [],
       },
       {
         title: "Languages",
-        description: <>Arabic (Native) • English (C1) • German (B1)</>,
+        description: <>Arabic (Native) • English (C1 Level) • German (B1 Level)</>,
         images: [],
       },
     ],
