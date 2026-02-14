@@ -49,11 +49,13 @@ const home: Home = {
   path: "/",
   image: "/images/og/home.jpg",
   label: "Home",
-  title: "Abdelrahman Ibrahim - Master's Student in Energy Engineering at OTH Amberg-Weiden",
+  title: "Abdelrahman Ibrahim - Energy Engineering Student",
   description: "Energy system optimization using Python",
   headline: <>Energy Management Systems using Python</>,
   featured: {
     display: false,
+    title: <>Featured</>,
+    href: "/work",
   },
   subline: <></>,
 };
