@@ -5,30 +5,25 @@ const person: Person = {
   firstName: "Abdelrahman",
   lastName: "Ibrahim",
   name: "Abdelrahman Ibrahim",
-  role: "Energy Systems Engineer",
+  role: "Energy Engineer",
   avatar: "/images/avatar.jpg",
   email: "abd.m.elsayed@gmail.com",
   location: "Europe/Berlin",
-  languages: ["English", "German", "Arabic"],
+  languages: ["Arabic", "English", "German"],
 };
 
 const newsletter: Newsletter = {
-  display: false,
+  display: false, // Keep disabled
   title: <>Subscribe to newsletter</>,
   description: <>Weekly insights on energy systems</>,
 };
 
 const social: Social = [
-  {
-    name: "GitHub",
-    icon: "github",
-    link: "https://github.com/mrgraphic00-design",
-    essential: true,
-  },
+  
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/",
+    link: "https://www.linkedin.com/in/abdelrahman-ibrahim-0b9b80166/", // Update with your actual URL
     essential: true,
   },
   {
@@ -43,22 +38,22 @@ const home: Home = {
   path: "/",
   image: "/images/og/home.jpg",
   label: "Home",
-  title: "Abdelrahman Ibrahim Portfolio",
-  description: "Portfolio website showcasing my work as an Energy Systems Engineer",
-  headline: <>Energy Systems Engineer and Python Developer</>,
+  title: "Abdelrahman Ibrahim - Energy Engineer",
+  description: "Portfolio showcasing energy system optimization projects and mechanical engineering experience",
+  headline: <>Energy Engineer & Mechanical Engineer</>,
   featured: {
     display: true,
-    title: <>Featured Project</>,
+    title: <>Master's Thesis</>,
     href: "/work",
   },
-  subline: <>M.Eng. Energy Engineering student specializing in energy system modeling and optimization using Python frameworks like PyPSA and Oemof.</>,
+  subline: <>M.Eng. Energy Engineering student at OTH Amberg-Weiden, specializing in energy system modeling, optimization, and renewable energy integration using Python frameworks like PyPSA and Oemof. Former Formula Student team leader with hands-on industrial maintenance experience.</>,
 };
 
 const about: About = {
   path: "/about",
   label: "About",
   title: "About - Abdelrahman Ibrahim",
-  description: "Meet Abdelrahman Ibrahim, Energy Systems Engineer from Berlin",
+  description: "Meet Abdelrahman Ibrahim, Energy Engineer from Berlin, Germany",
   tableOfContent: {
     display: true,
     subItems: true,
@@ -67,13 +62,13 @@ const about: About = {
     display: true,
   },
   calendar: {
-    display: false,
+    display: false, // Keep disabled unless you want booking
     link: "https://cal.com",
   },
   intro: {
     display: true,
     title: "Introduction",
-    description: <>Energy systems engineer specializing in renewable energy integration, sector coupling, and Python-based optimization frameworks. Currently completing Master thesis on techno-economic campus energy optimization.</>,
+    description: <>Berlin-based energy systems engineer passionate about accelerating the energy transition through data-driven optimization and renewable energy integration. Combining mechanical engineering fundamentals with advanced Python programming skills for energy system modeling. Former Formula Student team leader with proven track record in industrial maintenance and project management.</>,
   },
   work: {
     display: true,
@@ -84,41 +79,36 @@ const about: About = {
         timeframe: "Feb 2026 - Aug 2026",
         role: "Master Thesis - Energy System Optimization",
         achievements: [
-          <>Techno-economic optimization of campus energy system using PyPSA and Oemof frameworks</>,
-          <>Load profile analysis and time-series data processing with Python Pandas and NumPy</>,
-          <>Component sizing for PV arrays, battery storage, and heat pumps using linear optimization</>,
-          <>Achieved up to 40 percent CO2 reduction potential in optimized configurations</>,
+          <>Techno-economic optimization of campus energy system using PyPSA and Oemof frameworks for LCOE minimization and CO₂ reduction</>,
+          <>Load profile analysis and time-series data processing with Python (Pandas, NumPy) for electrical and thermal demand optimization</>,
+          <>Component sizing for PV arrays, battery energy storage systems, and heat pumps using linear optimization algorithms</>,
+          <>Sector coupling integration connecting electrical and thermal energy systems for improved flexibility and efficiency</>,
+          <>Achieved up to 40% CO₂ reduction potential through optimized renewable energy integration and storage sizing</>,
         ],
         images: [],
       },
       {
-        company: "First Co. for Industrial Development",
+        company: "First Co. for Industrial Development S.A.E.",
         timeframe: "Nov 2023 - Mar 2024",
         role: "Mechanical Engineer",
         achievements: [
-          <>Responsible for mechanical maintenance of BHS and TCY corrugated cardboard machinery</>,
-          <>Conducted fault analysis and repairs ensuring smooth production operations</>,
-          <>Implemented preventive maintenance plans reducing downtime by approximately 15 percent</>,
+          <>Directed comprehensive mechanical maintenance for BHS and TCY corrugated cardboard production lines including Bobst SPO160, DF924, P1600, and MarquipWardUnited machines</>,
+          <>Executed expert troubleshooting and diagnostics, rapidly resolving complex mechanical failures and minimizing production downtime by approximately 15%</>,
+          <>Pioneered proactive preventive maintenance schedules significantly improving machinery reliability and operational efficiency</>,
+          <>Championed precision engineering improvements optimizing production output and reducing operational waste</>,
         ],
         images: [],
       },
       {
-        company: "Alexandria Shipyard",
-        timeframe: "Sep 2022",
-        role: "Engineering Intern",
+        company: "Mansoura Motorsport Team",
+        timeframe: "2020 - 2023",
+        role: "Head of Suspension & Steering Systems - Formula Student & EV Rally",
         achievements: [
-          <>Worked on shipbuilding phases with focus on energy efficiency and equipment maintenance</>,
-          <>Quality assurance measures including NDT and hydrostatic testing</>,
-        ],
-        images: [],
-      },
-      {
-        company: "ADES Oil and Gas",
-        timeframe: "Aug 2022",
-        role: "Engineering Intern",
-        achievements: [
-          <>Hands-on experience with onshore and offshore drilling technologies</>,
-          <>Analysis of Blowout Preventer systems and safety standards application</>,
+          <>Led and mentored a sub-team of 5 engineers in designing, simulating, and manufacturing suspension and steering systems for Formula Student race cars</>,
+          <>Formula Student UK 2021 and 2022: Guided team to 27th place overall out of 65 teams and 14th in Cost and Manufacturing category</>,
+          <>Electric Vehicle Egypt Rally 2022: Pioneered EV suspension design contributing to 4th place overall out of 19 teams and 2nd place in business plan</>,
+          <>Directed complete suspension system design lifecycle using SolidWorks CAD and ANSYS FEA for structural analysis and optimization</>,
+          <>Focused on lightweight design principles and regenerative braking integration for enhanced energy efficiency</>,
         ],
         images: [],
       },
@@ -129,12 +119,12 @@ const about: About = {
     title: "Education",
     institutions: [
       {
-        name: "OTH Amberg-Weiden",
-        description: <>M.Eng. International Energy Engineering - Expected graduation August 2026</>,
+        name: "OTH Amberg-Weiden, Germany",
+        description: <>M.Eng. International Energy Engineering (Expected graduation: August 2026) - Projects: Energy Management System Design for Residential City Quarter using Python; Solar PV System Simulation using Polysun with performance and CO₂ analysis</>,
       },
       {
-        name: "Mansoura University Egypt",
-        description: <>B.Sc. Mechanical Engineering - GPA 2.3 - Bachelor thesis on Formula Student race car design achieved 95 percent</>,
+        name: "Mansoura University, Egypt",
+        description: <>B.Sc. Mechanical Power Engineering (Sep 2018 - Jul 2023) - Final Grade: Very Good (GPA 2.3) - Thesis: Design of Formula Student Race Car (Achieved Excellent Grade, 95%)</>,
       },
     ],
   },
@@ -143,23 +133,28 @@ const about: About = {
     title: "Technical Skills",
     skills: [
       {
-        title: "Energy System Modeling",
-        description: <>PyPSA framework, Oemof, LCOE analysis, sector coupling, load profile analysis, renewable energy integration</>,
+        title: "Energy System Modeling & Optimization",
+        description: <>PyPSA framework for power system analysis • Oemof for energy system modeling • LCOE analysis and economic evaluation • Sector coupling and integrated energy systems • Load profile analysis and demand forecasting • Renewable energy integration strategies • Mathematical optimization and linear programming</>,
         images: [],
       },
       {
-        title: "Programming and Data Analysis",
-        description: <>Python with Pandas, NumPy, and Matplotlib for data analysis, mathematical optimization, and time-series processing</>,
+        title: "Programming & Data Analysis",
+        description: <>Python for scientific computing and data analysis • Pandas and NumPy for data manipulation • Matplotlib for visualization • Time-series analysis and processing • Energy data analytics • Mathematical modeling and simulation</>,
         images: [],
       },
       {
-        title: "Simulation and Engineering Tools",
-        description: <>Polysun for PV system simulation, ANSYS FEA basics, SolidWorks with CSWA, CSWP, and CSWA-WD certifications</>,
+        title: "Engineering Software & Simulation",
+        description: <>Polysun for PV system simulation and performance analysis • ANSYS for FEA structural analysis • SolidWorks with CSWP, CSWP-WD, and CSWA certifications • AutoCAD for technical drawing • DCS (Distributed Control Systems) for process monitoring</>,
+        images: [],
+      },
+      {
+        title: "Maintenance & Manufacturing",
+        description: <>Lean Six Sigma Black Belt certified • Preventive and predictive maintenance strategies • Troubleshooting and root cause analysis • Non-Destructive Testing (NDT) • Quality Control and assurance • Process optimization and waste reduction • Hydraulic and pneumatic systems • Rotating equipment (pumps, compressors, turbines)</>,
         images: [],
       },
       {
         title: "Languages",
-        description: <>Arabic native, English C1 fluent, German B1 intermediate working towards B2</>,
+        description: <>Arabic (Native) • English (C1 - Fluent) • German (B1 - Intermediate, working towards B2)</>,
         images: [],
       },
     ],
@@ -169,23 +164,23 @@ const about: About = {
 const blog: Blog = {
   path: "/blog",
   label: "Blog",
-  title: "Writing about energy systems",
-  description: "Read what Abdelrahman Ibrahim has been up to recently",
+  title: "Insights on energy systems",
+  description: "Articles about energy optimization, Python, and renewable energy",
 };
 
 const work: Work = {
   path: "/work",
   label: "Work",
   title: "Projects - Abdelrahman Ibrahim",
-  description: "Energy engineering and optimization projects by Abdelrahman Ibrahim",
+  description: "Energy system optimization and engineering projects",
 };
 
 const gallery: Gallery = {
   path: "/gallery",
   label: "Gallery",
-  title: "Photo gallery - Abdelrahman Ibrahim",
-  description: "A photo collection by Abdelrahman Ibrahim",
-  images: [],
+  title: "Gallery - Abdelrahman Ibrahim",
+  description: "Project photos and visualizations",
+  images: [], // We'll hide this tab
 };
 
 export { person, social, newsletter, home, about, blog, work, gallery };
