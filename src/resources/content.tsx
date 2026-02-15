@@ -32,16 +32,22 @@ const social: Social = [
     essential: true,
   },
   {
+    name: "Phone",
+    icon: "phone",
+    link: "tel:+491786872309",
+    essential: true,
+  },
+  {
     name: "CV (English)",
     icon: "document",
     link: "/cv/Abdelrahman_Ibrahim_CV_EN.pdf",
-    essential: true,
+    essential: false,
   },
   {
     name: "CV (German)",
     icon: "document",
     link: "/cv/Abdelrahman_Ibrahim_CV_DE.pdf",
-    essential: true,
+    essential: false,
   },
 ];
 
@@ -55,7 +61,7 @@ const home: Home = {
   featured: {
     display: true,
     title: <>Master's Thesis</>,
-    href: "/work",
+    href: "/work/master-thesis-energy-optimization",
   },
   subline: <>Master's Student in Energy Engineering & Mechanical Engineer</>,
 };
@@ -104,7 +110,7 @@ const about: About = {
     title: "Education",
     institutions: [
       {
-        name: "OTH Amberg-Weiden, Germany",
+        name: "Ostbayerische Technische Hochschule Amberg-Weiden, Germany",
         description: <>M.Eng. International Energy Engineering | 03/2024 - Present (Expected: Aug 2026). Projects: Energy Management System Design for a Residential City Quarter - Developed a cost- and CO₂-optimized hybrid energy system using Python (Pandas, NumPy); Solar PV System Simulation - Designed and compared an economical vs ecological PV configuration using Polysun; calculated system performance, and CO₂ footprint</>,
       },
       {
