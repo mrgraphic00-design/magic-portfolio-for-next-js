@@ -19,37 +19,13 @@ const newsletter: Newsletter = {
 };
 
 const social: Social = [
-  {
-    name: "LinkedIn",
-    icon: "linkedin",
-    link: "https://www.linkedin.com/in/abdelrahman-ibrahim-0b9b80166/",
-    essential: true,
-  },
-  {
-    name: "Email",
-    icon: "email",
-    link: "mailto:abd.m.elsayed@gmail.com",
-    essential: true,
-  },
-  {
-    name: "Phone",
-    icon: "phone",
-    link: "tel:+491786872309",
-    essential: true,
-  },
-  {
-    name: "CV (English)",
-    icon: "document",
-    link: "/cv/Abdelrahman_Ibrahim_CV_EN.pdf",
-    essential: false,
-  },
-  {
-    name: "CV (German)",
-    icon: "document",
-    link: "/cv/Abdelrahman_Ibrahim_CV_DE.pdf",
-    essential: false,
-  },
+  { name: "LinkedIn", icon: "linkedin", link: "https://www.linkedin.com/in/abdelrahman-ibrahim-0b9b80166/", essential: true },
+  { name: "Email", icon: "email", link: "mailto:abd.m.elsayed@gmail.com", essential: true },
+  { name: "Phone", icon: "phone", link: "tel:+491786872309", essential: true },
+  { name: "CV (English)", icon: "document", link: "/cv/Abdelrahman_Ibrahim_CV_EN.pdf", essential: true },
+  { name: "CV (German)", icon: "document", link: "/cv/Abdelrahman_Ibrahim_CV_DE.pdf", essential: true },
 ];
+
 
 const home: Home = {
   path: "/",
@@ -82,11 +58,33 @@ const about: About = {
     display: false,
     link: "https://cal.com",
   },
-  intro: {
-    display: true,
-    title: "Summary",
-    description: <>I am currently pursuing a Master of Engineering in International Energy Engineering at OTH Amberg-Weiden, Germany (expected graduation: Autumn 2026), with a strong focus on energy management, smart grids, and solar energy integration. My studies emphasize the development of sustainable and intelligent energy systems that support the transition toward a cleaner and more efficient global energy landscape. With a background in Mechanical Engineering, I bring a solid technical foundation in power generation, industrial systems, and process optimization. My academic and professional experiences have strengthened my expertise in energy system analysis, renewable integration, and data-driven energy management solutions. I am particularly interested in leveraging digital tools and automation to enhance the performance and reliability of modern energy infrastructures.</>,
-  },
+ intro: {
+  display: true,
+  title: "Summary",
+  description: (
+    <>
+      <Text as="h3" weight="strong">
+        Summary
+      </Text>
+      <Text as="p">
+        I am currently pursuing a Master of Engineering in International Energy Engineering at OTH
+        Amberg-Weiden, Germany (expected graduation: Autumn 2026), with a strong focus on energy
+        management, smart grids, and solar energy integration. My studies emphasize the development
+        of sustainable and intelligent energy systems that support the transition toward a cleaner
+        and more efficient global energy landscape.
+      </Text>
+      <Text as="p">
+        With a background in Mechanical Engineering, I bring a solid technical foundation in power
+        generation, industrial systems, and process optimization. My academic and professional
+        experiences have strengthened my expertise in energy system analysis, renewable integration,
+        and data-driven energy management solutions. I am particularly interested in leveraging
+        digital tools and automation to enhance the performance and reliability of modern energy
+        infrastructures.
+      </Text>
+    </>
+  ),
+},
+
   work: {
     display: true,
     title: "Professional Experience",
@@ -119,30 +117,30 @@ const about: About = {
       },
     ],
   },
-  technical: {
-    display: true,
-    title: "Skills",
-    skills: [
-      {
-        title: "Engineering Software & Tools",
-        description: <>AutoCAD (Basic) • ANSYS (Basic FEA) • Python • Polysun</>,
-        images: [],
-      },
-      {
-        title: "Maintenance & Manufacturing",
-        description: <>Preventive & Predictive Maintenance • Troubleshooting • NDT • Quality Control (QC) • Lean Six Sigma (Process Optimization, Waste Reduction)</>,
-        images: [],
-      },
-      {
-        title: "Office Productivity",
-        description: <>Microsoft Office Suite (Word, Excel, PowerPoint, Outlook)</>,
-        images: [],
-      },
-      {
-        title: "Languages",
-        description: <>Arabic (Native) • English (C1 Level) • German (B1 Level)</>,
-        images: [],
-      },
+ technical: {
+  display: true,
+  title: "Skills & Certifications",
+  skills: [
+    {
+      title: "Engineering Software & Tools",
+      description: <>AutoCAD (Basic) • ANSYS (Basic FEA) • Python • Polysun</>,
+      images: [],
+    },
+       {
+      title: "Maintenance & Manufacturing",
+      description: <>Preventive & Predictive Maintenance • Troubleshooting • NDT • Quality Control (QC) • Lean Six Sigma (Process Optimization, Waste Reduction)</>,
+      images: [],
+    },
+    {
+      title: "Office Productivity",
+      description: <>Microsoft Office Suite (Word, Excel, PowerPoint, Outlook)</>,
+      images: [],
+    },
+    {
+      title: "Courses & Certifications",
+      description: <>Lean Six Sigma Black Belt Certification (01/2024) • Comprehensive Rotating Equipment Diploma (10/2023): Pumps, Gas Compressors, Gas Turbines (Design, Operation, Troubleshooting, Maintenance), Vibration Monitoring & Analysis, Machine Alignment, Balancing, Mechanical Seals • Heavy Equipment Hydraulics Systems (11/2021) • Supply Chain Management Fundamentals (American Chamber of Commerce in Egypt, 09/2021) • Certified SolidWorks (CSWP-WD, CSWP, CSWA) (05/2021)</>,
+      images: [],
+    },
     ],
   },
 };
