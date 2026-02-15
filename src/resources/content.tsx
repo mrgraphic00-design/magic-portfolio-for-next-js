@@ -90,7 +90,7 @@ const about: About = {
     title: "Professional Experience",
     experiences: [
       {
-        company: "First Co. for Industrial Development S.A.E., Cairo, Egypt",
+        company: "First Co. for Industrial Development",
         timeframe: "Nov 2023 - Mar 2024",
         role: "Mechanical Engineer (Packing Industry)",
         achievements: [
@@ -108,7 +108,7 @@ const about: About = {
     title: "Education",
     institutions: [
       {
-        name: "Ostbayerische Technische Hochschule Amberg-Weiden, Germany",
+        name: "OTH Amberg-Weiden, Germany",
         description: <>M.Eng. International Energy Engineering | 03/2024 - Present (Expected: Aug 2026). Projects: Energy Management System Design for a Residential City Quarter - Developed a cost- and CO₂-optimized hybrid energy system using Python (Pandas, NumPy); Solar PV System Simulation - Designed and compared an economical vs ecological PV configuration using Polysun; calculated system performance, and CO₂ footprint</>,
       },
       {
@@ -117,16 +117,21 @@ const about: About = {
       },
     ],
   },
- technical: {
+technical: {
   display: true,
-  title: "Skills & Certifications",
+  title: "Skills",
   skills: [
+    {
+      title: "Languages",
+      description: <>Arabic (Native) • English (C1 Level) • German (B1 Level)</>,
+      images: [],
+    },
     {
       title: "Engineering Software & Tools",
       description: <>AutoCAD (Basic) • ANSYS (Basic FEA) • Python • Polysun</>,
       images: [],
     },
-       {
+    {
       title: "Maintenance & Manufacturing",
       description: <>Preventive & Predictive Maintenance • Troubleshooting • NDT • Quality Control (QC) • Lean Six Sigma (Process Optimization, Waste Reduction)</>,
       images: [],
@@ -136,14 +141,28 @@ const about: About = {
       description: <>Microsoft Office Suite (Word, Excel, PowerPoint, Outlook)</>,
       images: [],
     },
-    {
-      title: "Courses & Certifications",
-      description: <>Lean Six Sigma Black Belt Certification (01/2024) • Comprehensive Rotating Equipment Diploma (10/2023): Pumps, Gas Compressors, Gas Turbines (Design, Operation, Troubleshooting, Maintenance), Vibration Monitoring & Analysis, Machine Alignment, Balancing, Mechanical Seals • Heavy Equipment Hydraulics Systems (11/2021) • Supply Chain Management Fundamentals (American Chamber of Commerce in Egypt, 09/2021) • Certified SolidWorks (CSWP-WD, CSWP, CSWA) (05/2021)</>,
-      images: [],
-    },
-    ],
-  },
-};
+   {
+  title: "Courses & Certifications",
+  description: (
+    <>
+      <Text as="div">• Lean Six Sigma Black Belt Certification (01/2024)</Text>
+      <Text as="div">
+        • Comprehensive Rotating Equipment Diploma (10/2023): Pumps, Gas Compressors, Gas Turbines
+        (Design, Operation, Troubleshooting, Maintenance), Vibration Monitoring & Analysis, Machine
+        Alignment, Balancing, Mechanical Seals.
+      </Text>
+      <Text as="div">• Heavy Equipment Hydraulics Systems (11/2021)</Text>
+      <Text as="div">
+        • Supply Chain Management Fundamentals (American Chamber of Commerce in Egypt, 09/2021)
+      </Text>
+      <Text as="div">• Certified SolidWorks (CSWP-WD, CSWP, CSWA) (05/2021)</Text>
+    </>
+  ),
+  images: [],
+},
+  ],
+},
+
 
 const blog: Blog = {
   path: "/blog",
