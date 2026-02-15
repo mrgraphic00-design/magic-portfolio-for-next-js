@@ -53,8 +53,8 @@ const home: Home = {
   description: "Master's Student in Energy Engineering & Mechanical Engineer",
   headline: <>Abdelrahman Ibrahim</>,
   featured: {
-    display: false,
-    title: <>Featured</>,
+    display: true,
+    title: <>Master's Thesis</>,
     href: "/work",
   },
   subline: <>Master's Student in Energy Engineering & Mechanical Engineer</>,
@@ -86,23 +86,11 @@ const about: About = {
     title: "Professional Experience",
     experiences: [
       {
-        company: "OTH Amberg-Weiden",
-        timeframe: "Feb 2026 - Aug 2026",
-        role: "Master Thesis - Energy System Optimization",
-        achievements: [
-          <>Techno-economic optimization of campus energy system using PyPSA and Oemof frameworks</>,
-          <>Load profile analysis and time-series data processing with Python (Pandas, NumPy)</>,
-          <>Component sizing for PV arrays, battery energy storage systems, and heat pumps</>,
-          <>Achieved up to 40% CO₂ reduction potential through optimized renewable energy integration</>,
-        ],
-        images: [],
-      },
-      {
-        company: "First Co. for Industrial Development S.A.E.",
+        company: "First Co. for Industrial Development S.A.E., Cairo, Egypt",
         timeframe: "Nov 2023 - Mar 2024",
-        role: "Mechanical Engineer",
+        role: "Mechanical Engineer (Packing Industry)",
         achievements: [
-          <>Directed comprehensive mechanical maintenance for BHS and TCY corrugated cardboard production lines including Bobst SPO160, DF924, P1600, and MarquipWardUnited machines</>,
+          <>Directed comprehensive mechanical maintenance for BHS and TCY corrugated cardboard production lines (Bobst SPO160, DF924, P1600, MarquipWardUnited)</>,
           <>Executed expert troubleshooting and diagnostics, rapidly resolving complex mechanical failures and effectively minimizing production downtime</>,
           <>Pioneered and implemented proactive preventive maintenance schedules, significantly improving machinery reliability and enhancing operational efficiency</>,
           <>Championed precision engineering and efficiency improvements, optimizing production output and reducing operational waste</>,
@@ -117,36 +105,31 @@ const about: About = {
     institutions: [
       {
         name: "OTH Amberg-Weiden, Germany",
-        description: <>M.Eng. International Energy Engineering | March 2024 - Present (Expected graduation: August 2026). Projects: Energy Management System Design for a Residential City Quarter using Python (Pandas, NumPy); Solar PV System Simulation using Polysun with system performance and CO₂ footprint calculations</>,
+        description: <>M.Eng. International Energy Engineering | 03/2024 - Present (Expected: Aug 2026). Projects: Energy Management System Design for a Residential City Quarter - Developed a cost- and CO₂-optimized hybrid energy system using Python (Pandas, NumPy); Solar PV System Simulation - Designed and compared an economical vs ecological PV configuration using Polysun; calculated system performance, and CO₂ footprint</>,
       },
       {
         name: "Mansoura University, Egypt",
-        description: <>B.Sc. Mechanical Power Engineering | September 2018 - July 2023. Final Grade: Very Good (GPA: 2.3). Thesis: Design of Formula Student Race Car (Achieved Excellent Grade, 95%)</>,
+        description: <>B.Sc. Mechanical Power Engineering | 09/2018 - 07/2023. Final Grade: Very Good (GPA: 2.3). Thesis: Design of Formula Student Race Car (Achieved Excellent Grade, 95%)</>,
       },
     ],
   },
   technical: {
     display: true,
-    title: "Technical Skills",
+    title: "Skills",
     skills: [
       {
-        title: "Energy System Modeling & Optimization",
-        description: <>PyPSA framework for power system analysis • Oemof for energy system modeling • LCOE analysis and economic evaluation • Sector coupling and integrated energy systems • Load profile analysis and demand forecasting • Renewable energy integration strategies • Mathematical optimization and linear programming</>,
-        images: [],
-      },
-      {
-        title: "Programming & Data Analysis",
-        description: <>Python for scientific computing and data analysis • Pandas and NumPy for data manipulation • Matplotlib for visualization • Time-series analysis and processing • Energy data analytics • Mathematical modeling and simulation</>,
-        images: [],
-      },
-      {
-        title: "Engineering Software & Simulation",
-        description: <>Polysun for PV system simulation and performance analysis • ANSYS for FEA structural analysis (Basic) • SolidWorks (CSWP, CSWP-WD, CSWA certifications) • AutoCAD (Basic)</>,
+        title: "Engineering Software & Tools",
+        description: <>AutoCAD (Basic) • ANSYS (Basic FEA) • Python • Polysun</>,
         images: [],
       },
       {
         title: "Maintenance & Manufacturing",
-        description: <>Lean Six Sigma Black Belt certified • Preventive and predictive maintenance strategies • Troubleshooting and root cause analysis • Non-Destructive Testing (NDT) • Quality Control and assurance • Process optimization and waste reduction • Hydraulic and pneumatic systems • Rotating equipment maintenance (pumps, compressors, turbines)</>,
+        description: <>Preventive & Predictive Maintenance • Troubleshooting • NDT • Quality Control (QC) • Lean Six Sigma (Process Optimization, Waste Reduction)</>,
+        images: [],
+      },
+      {
+        title: "Office Productivity",
+        description: <>Microsoft Office Suite (Word, Excel, PowerPoint, Outlook)</>,
         images: [],
       },
       {
@@ -158,12 +141,12 @@ const about: About = {
   },
 };
 
-// const blog: Blog = {
-//   path: "/blog",
-//   label: "Blog",
-//   title: "Insights on energy systems",
-//   description: "Articles about energy optimization and Python",
-// };
+const blog: Blog = {
+  path: "/blog",
+  label: "Blog",
+  title: "Insights on energy systems",
+  description: "Articles about energy optimization and Python",
+};
 
 const work: Work = {
   path: "/work",
@@ -172,12 +155,12 @@ const work: Work = {
   description: "Energy system optimization projects",
 };
 
-// const gallery: Gallery = {
-//   path: "/gallery",
-//   label: "Gallery",
-//   title: "Gallery - Abdelrahman Ibrahim",
-//   description: "Project photos",
-//   images: [],
-// };
+const gallery: Gallery = {
+  path: "/gallery",
+  label: "Gallery",
+  title: "Gallery - Abdelrahman Ibrahim",
+  description: "Project photos",
+  images: [],
+};
 
-export { person, social, home, about, work };
+export { person, social, newsletter, home, about, blog, work, gallery };
