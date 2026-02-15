@@ -116,7 +116,7 @@ const about: About = {
     title: "Education",
     institutions: [
       {
-        name: "Ostbayerische Technische Hochschule Amberg-Weiden, Germany",
+        name: "OTH Amberg-Weiden, Germany",
         description: <>M.Eng. International Energy Engineering | March 2024 - Present (Expected graduation: August 2026). Projects: Energy Management System Design for a Residential City Quarter using Python (Pandas, NumPy); Solar PV System Simulation using Polysun with system performance and CO₂ footprint calculations</>,
       },
       {
@@ -158,12 +158,12 @@ const about: About = {
   },
 };
 
-const blog: Blog = {
-  path: "/blog",
-  label: "Blog",
-  title: "Insights on energy systems",
-  description: "Articles about energy optimization and Python",
-};
+// const blog: Blog = {
+//   path: "/blog",
+//   label: "Blog",
+//   title: "Insights on energy systems",
+//   description: "Articles about energy optimization and Python",
+// };
 
 const work: Work = {
   path: "/work",
@@ -172,12 +172,12 @@ const work: Work = {
   description: "Energy system optimization projects",
 };
 
-const gallery: Gallery = {
-  path: "/gallery",
-  label: "Gallery",
-  title: "Gallery - Abdelrahman Ibrahim",
-  description: "Project photos",
-  images: [],
-};
+// const gallery: Gallery = {
+//   path: "/gallery",
+//   label: "Gallery",
+//   title: "Gallery - Abdelrahman Ibrahim",
+//   description: "Project photos",
+//   images: [],
+// };
 
-export { person, social, newsletter, home, about, blog, work, gallery };
+export { person, social, home, about, work };
