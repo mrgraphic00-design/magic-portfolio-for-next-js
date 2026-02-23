@@ -25,30 +25,6 @@ const social: Social = [
     link: "https://www.linkedin.com/in/abdelrahman-ibrahim-0b9b80166/",
     essential: true,
   },
-  {
-    name: "Email",
-    icon: "email",
-    link: "mailto:abd.m.elsayed@gmail.com",
-    essential: true,
-  },
-  {
-    name: "Phone",
-    icon: "phone",
-    link: "tel:+491786872309",
-    essential: true,
-  },
-  {
-    name: "CV (English)",
-    icon: "document",
-    link: "/cv/Abdelrahman_Ibrahim_CV_EN.pdf",
-    essential: true,
-  },
-  {
-    name: "CV (German)",
-    icon: "document",
-    link: "/cv/Abdelrahman_Ibrahim_CV_DE.pdf",
-    essential: true,
-  },
 ];
 
 const home: Home = {
