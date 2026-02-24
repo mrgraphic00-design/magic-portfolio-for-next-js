@@ -9,7 +9,7 @@ const person: Person = {
   avatar: "/images/avatar.jpg",
   email: "abd.m.elsayed@gmail.com",
   location: "Europe/Berlin",
-  languages: ["Arabic", "English", "German"],
+  languages: ["English", "German", "Arabic"],
 };
 
 const newsletter: Newsletter = {
@@ -115,40 +115,12 @@ const about: About = {
         role: "Mechanical Engineer — Packing Industry",
         achievements: [
           <>
-            Directed comprehensive mechanical maintenance for BHS and TCY corrugated cardboard
-            production lines (Bobst SPO160, DF924, P1600, MarquipWardUnited).
+            Technical Leadership & Maintenance: Directed comprehensive mechanical maintenance and expert diagnostics for BHS, TCY, Bobst, 
+            and MarquipWardUnited lines, drastically reducing downtime through rapid resolution of complex system failures.
           </>,
           <>
-            Executed expert troubleshooting and diagnostics, rapidly resolving complex mechanical
-            failures and effectively minimizing production downtime.
-          </>,
-          <>
-            Pioneered and implemented proactive preventive maintenance schedules, significantly
-            improving machinery reliability and enhancing operational efficiency.
-          </>,
-          <>
-            Championed precision engineering and efficiency improvements, optimizing production
-            output and reducing operational waste.
-          </>,
-        ],
-        images: [],
-      },
-      {
-        company: "Egyptian Electricity Holding Company",
-        timeframe: "Jul 2022 – Aug 2022",
-        role: "Internship — Power Generation Plant",
-        achievements: [
-          <>
-            Observed and assisted in operation and maintenance procedures for steam turbines and
-            auxiliary systems in a large-scale thermal power plant.
-          </>,
-          <>
-            Gained hands-on exposure to grid-connected generation, control room operations, and
-            plant safety protocols.
-          </>,
-          <>
-            Documented performance metrics and contributed to maintenance checklists used by
-            senior engineers.
+            Operational Optimization: Engineered proactive preventive maintenance schedules and precision improvements 
+            that significantly enhanced machinery reliability, boosted production output, and minimized operational waste.
           </>,
         ],
         images: [],
