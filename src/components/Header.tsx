@@ -15,7 +15,7 @@ const ThemeToggle = dynamic(() => import("./ThemeToggle").then((mod) => mod.Them
 
 type TimeDisplayProps = {
   timeZone: string;
-  locale?: string; // Optionally allow locale, defaulting to 'en-GB'
+  locale?: string;
 };
 
 const TimeDisplay: React.FC<TimeDisplayProps> = ({ timeZone, locale = "en-GB" }) => {
@@ -91,7 +91,24 @@ export const Header = () => {
           >
             <Row gap="4" vertical="center" textVariant="body-default-s" suppressHydrationWarning>
               {routes["/"] && (
-                <ToggleButton prefixIcon="home" href="/" selected={pathname === "/"} aria-label="Home" />
+                <>
+                  <Row s={{ hide: true }}>
+                    <ToggleButton
+                      prefixIcon="home"
+                      href="/"
+                      label="Home"
+                      selected={pathname === "/"}
+                    />
+                  </Row>
+                  <Row hide s={{ hide: false }}>
+                    <ToggleButton
+                      prefixIcon="home"
+                      href="/"
+                      label="Home"
+                      selected={pathname === "/"}
+                    />
+                  </Row>
+                </>
               )}
               <Line background="neutral-alpha-medium" vert maxHeight="24" />
               {routes["/about"] && (
@@ -108,8 +125,8 @@ export const Header = () => {
                     <ToggleButton
                       prefixIcon="person"
                       href="/about"
+                      label={about.label}
                       selected={pathname === "/about"}
-                      aria-label={about.label}
                     />
                   </Row>
                 </>
