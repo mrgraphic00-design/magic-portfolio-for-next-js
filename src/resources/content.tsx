@@ -87,9 +87,6 @@ const about: About = {
     title: "Summary",
     description: (
       <>
-        <Text as="h3" weight="strong">
-          Summary
-        </Text>
         <Text as="p">
           I am currently pursuing a Master of Engineering in International Energy Engineering at OTH
           Amberg-Weiden, Germany (expected graduation: Autumn 2026), with a strong focus on energy
@@ -114,8 +111,8 @@ const about: About = {
     experiences: [
       {
         company: "First Co.",
-        timeframe: "Nov 2023 - Mar 2024",
-        role: "Mechanical Engineer (Packing Industry)",
+        timeframe: "Nov 2023 – Mar 2024",
+        role: "Mechanical Engineer — Packing Industry",
         achievements: [
           <>
             Directed comprehensive mechanical maintenance for BHS and TCY corrugated cardboard
@@ -136,6 +133,26 @@ const about: About = {
         ],
         images: [],
       },
+      {
+        company: "Egyptian Electricity Holding Company",
+        timeframe: "Jul 2022 – Aug 2022",
+        role: "Internship — Power Generation Plant",
+        achievements: [
+          <>
+            Observed and assisted in operation and maintenance procedures for steam turbines and
+            auxiliary systems in a large-scale thermal power plant.
+          </>,
+          <>
+            Gained hands-on exposure to grid-connected generation, control room operations, and
+            plant safety protocols.
+          </>,
+          <>
+            Documented performance metrics and contributed to maintenance checklists used by
+            senior engineers.
+          </>,
+        ],
+        images: [],
+      },
     ],
   },
   studies: {
@@ -146,11 +163,12 @@ const about: About = {
         name: "OTH Amberg-Weiden",
         description: (
           <>
-            M.Eng. International Energy Engineering | 03/2024 - Present (Expected: Aug 2026).
-            Projects: Energy Management System Design for a Residential City Quarter - Developed a
-            cost- and CO₂-optimized hybrid energy system using Python (Pandas, NumPy); Solar PV
-            System Simulation - Designed and compared an economical vs ecological PV configuration
-            using Polysun; calculated system performance, and CO₂ footprint.
+            <strong>M.Eng. International Energy Engineering</strong> — 03/2024 – Present (Expected:
+            Aug 2026).
+            {" "}Key projects: Energy Management System Design for a Residential City Quarter
+            (Python, Pandas, NumPy); Solar PV System Simulation — economical vs. ecological
+            configuration comparison (Polysun); Master's Thesis — Techno-economic optimisation of
+            OTH Amberg campus energy system using PyPSA.
           </>
         ),
       },
@@ -158,8 +176,9 @@ const about: About = {
         name: "Mansoura University",
         description: (
           <>
-            B.Sc. Mechanical Power Engineering | 09/2018 - 07/2023. Final Grade: Very Good (GPA:
-            2.3). Thesis: Design of Formula Student Race Car (Achieved Excellent Grade, 95%).
+            <strong>B.Sc. Mechanical Power Engineering</strong> — 09/2018 – 07/2023. Final Grade:
+            Very Good (GPA 2.3). Thesis: Design of Formula Student Race Car — Achieved Excellent
+            Grade (95%).
           </>
         ),
       },
@@ -170,46 +189,96 @@ const about: About = {
     title: "Skills",
     skills: [
       {
-        title: "Languages",
-        description: <>Arabic (Native) • English (C1 Level) • German (B1 Level)</>,
+        title: "Programming & Data Analysis",
+        description: (
+          <>
+            Python · Pandas · NumPy · PyPSA · Oemof · Linear Programming &amp; Optimisation
+          </>
+        ),
+        tags: [
+          { name: "Python", icon: "python" },
+          { name: "Pandas", icon: "pandas" },
+          { name: "NumPy", icon: "numpy" },
+          { name: "PyPSA" },
+          { name: "Oemof" },
+        ],
         images: [],
       },
       {
-        title: "Engineering Software & Tools",
-        description: <>AutoCAD (Basic) • ANSYS (Basic FEA) • Python • Polysun</>,
+        title: "Engineering Software",
+        description: (
+          <>
+            AutoCAD · ANSYS (Basic FEA) · Polysun · SolidWorks (CSWP certified) · Microsoft
+            Office Suite
+          </>
+        ),
+        tags: [
+          { name: "AutoCAD", icon: "autocad" },
+          { name: "ANSYS" },
+          { name: "Polysun" },
+          { name: "SolidWorks" },
+        ],
+        images: [],
+      },
+      {
+        title: "Energy Systems",
+        description: (
+          <>
+            Smart Grids · Renewable Energy Integration · Energy Management Systems · Sector
+            Coupling · Battery Storage · Heat Pumps · PV Design
+          </>
+        ),
+        tags: [
+          { name: "Smart Grids" },
+          { name: "Solar PV" },
+          { name: "Battery Storage" },
+          { name: "Heat Pumps" },
+          { name: "Sector Coupling" },
+        ],
         images: [],
       },
       {
         title: "Maintenance & Manufacturing",
         description: (
           <>
-            Preventive & Predictive Maintenance • Troubleshooting • NDT • Quality Control (QC) •
-            Lean Six Sigma (Process Optimization, Waste Reduction)
+            Preventive &amp; Predictive Maintenance · Troubleshooting · NDT · Quality Control ·
+            Lean Six Sigma (Black Belt)
           </>
         ),
+        tags: [
+          { name: "Lean Six Sigma" },
+          { name: "Predictive Maintenance" },
+          { name: "NDT" },
+          { name: "Quality Control" },
+        ],
         images: [],
       },
       {
-        title: "Office Productivity",
-        description: <>Microsoft Office Suite (Word, Excel, PowerPoint, Outlook)</>,
+        title: "Languages",
+        description: <>Arabic (Native) · English (C1) · German (B1)</>,
+        tags: [
+          { name: "Arabic" },
+          { name: "English (C1)" },
+          { name: "German (B1)" },
+        ],
         images: [],
       },
       {
-        title: "Courses & Certifications",
+        title: "Certifications",
         description: (
           <>
-            <Text as="div">• Lean Six Sigma Black Belt Certification (01/2024)</Text>
+            <Text as="div">• Lean Six Sigma Black Belt (01/2024)</Text>
             <Text as="div">
               • Comprehensive Rotating Equipment Diploma (10/2023): Pumps, Gas Compressors, Gas
-              Turbines (Design, Operation, Troubleshooting, Maintenance), Vibration Monitoring &
-              Analysis, Machine Alignment, Balancing, Mechanical Seals.
+              Turbines, Vibration Monitoring &amp; Analysis, Machine Alignment, Balancing,
+              Mechanical Seals.
             </Text>
             <Text as="div">• Heavy Equipment Hydraulics Systems (11/2021)</Text>
             <Text as="div">
-              • Supply Chain Management Fundamentals (American Chamber of Commerce in Egypt,
-              09/2021)
+              • Supply Chain Management Fundamentals — American Chamber of Commerce in Egypt
+              (09/2021)
             </Text>
-            <Text as="div">• Certified SolidWorks (CSWP-WD, CSWP, CSWA) (05/2021)</Text>
+            <Text as="div">• Certified SolidWorks CSWP-WD, CSWP, CSWA (05/2021)</Text>
           </>
         ),
         images: [],
@@ -218,14 +287,26 @@ const about: About = {
   },
 };
 
-
+const blog: Blog = {
+  path: "/blog",
+  label: "Blog",
+  title: "Blog - Abdelrahman Ibrahim",
+  description: "Insights on energy engineering, sustainability, and engineering projects.",
+};
 
 const work: Work = {
   path: "/work",
   label: "Work",
   title: "Projects - Abdelrahman Ibrahim",
-  description: "Energy system optimization projects",
+  description: "Energy system optimisation and engineering projects",
 };
 
+const gallery: Gallery = {
+  path: "/gallery",
+  label: "Gallery",
+  title: "Gallery - Abdelrahman Ibrahim",
+  description: "A collection of engineering project visuals and diagrams.",
+  images: [],
+};
 
 export { person, social, newsletter, home, about, blog, work, gallery };

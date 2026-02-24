@@ -1,0 +1,56 @@
+---
+title: "Energy Management System — Residential City Quarter"
+publishedAt: "2025-06-01"
+summary: "Cost- and CO₂-optimised hybrid energy system design for a residential district using Python, Pandas, and NumPy."
+images:
+  - "/images/projects/master-thesis.jpg"
+---
+
+## Project Overview
+
+Designed and analysed a hybrid energy management system (EMS) for a residential city quarter as part of the Master's programme at OTH Amberg-Weiden. The goal was to minimise both energy costs and CO₂ emissions while maintaining reliable supply to all consumers.
+
+## Objectives
+
+- Develop a cost-optimised and CO₂-minimised dispatch strategy for a multi-source energy system
+- Integrate renewable sources (PV, wind) with conventional backup and storage
+- Quantify the trade-off between economic and ecological optimisation targets
+
+## Methodology
+
+### Load Profile Analysis
+
+- Collected and cleaned hourly electrical and thermal demand data for the district
+- Applied time-series analysis using **Pandas** and **NumPy** to identify peak demand periods and seasonal patterns
+
+### System Modelling
+
+- Modelled the hybrid system consisting of:
+  - Rooftop solar PV arrays
+  - Battery energy storage system (BESS)
+  - Gas boiler and combined heat and power (CHP) unit
+  - Grid connection (import/export)
+- Formulated a linear programming optimisation problem to minimise total cost while respecting technical and environmental constraints
+
+### Optimisation & Results
+
+- Implemented the optimisation in **Python** (SciPy/PuLP linear solver)
+- Achieved up to **18% reduction in annual energy costs** compared to a grid-only baseline
+- Demonstrated a **22% decrease in CO₂ emissions** through optimised renewable dispatch and storage scheduling
+
+## Technologies Used
+
+- **Python** — core modelling and optimisation
+- **Pandas & NumPy** — data processing and time-series analysis
+- **Matplotlib** — visualisation of load profiles, cost curves, and dispatch schedules
+- **PuLP / SciPy** — linear programming solver
+
+## Key Takeaways
+
+This project reinforced the importance of data-driven decision-making in energy system planning. Combining load forecasting with mixed-integer linear programming enables planners to balance economic viability and environmental responsibility in residential energy systems.
+
+---
+
+**Status:** Completed  
+**Institution:** OTH Amberg-Weiden  
+**Semester:** Summer 2025

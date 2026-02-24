@@ -105,8 +105,8 @@ const effects: EffectsConfig = {
     radius: 100,
   },
   gradient: {
-    display: false,
-    opacity: 100,
+    display: true,
+    opacity: 60,
     x: 50,
     y: 60,
     width: 100,
@@ -194,6 +194,8 @@ const schema: SchemaConfig = {
 // social links
 const sameAs: SameAsConfig = {
   linkedin: "https://www.linkedin.com/in/abdelrahman-ibrahim-0b9b80166/",
+  threads: "",
+  discord: "",
 };
 
 // social sharing configuration for blog posts
