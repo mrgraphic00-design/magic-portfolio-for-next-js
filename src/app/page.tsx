@@ -12,9 +12,11 @@ import {
   Line,
 } from "@once-ui-system/core";
 import { home, about, person, baseURL, routes } from "@/resources";
-import { Mailchimp } from "@/components";
+import dynamic from "next/dynamic";
 import { Projects } from "@/components/work/Projects";
 import { Posts } from "@/components/blog/Posts";
+
+const Mailchimp = dynamic(() => import("@/components/Mailchimp").then((mod) => mod.Mailchimp));
 
 export async function generateMetadata() {
   return Meta.generate({
