@@ -1,3 +1,13 @@
+/* Professional light theme color overrides */
+[data-theme="light"] {
+  --page-background: #F6F8FA;
+  --neutral-background-weak: #FAFBFC;
+  --neutral-on-background-strong: #24292F;
+  --neutral-on-background-medium: #57606A;
+  --neutral-border-weak: #D0D7DE;
+  --neutral-border-medium: #BCC4CC;
+}
+
 /* :root {
   /*
   /* Override default variables here */
