@@ -218,12 +218,7 @@ const about: About = {
   },
 };
 
-const blog: Blog = {
-  path: "/blog",
-  label: "Blog",
-  title: "Insights on energy systems",
-  description: "Articles about energy optimization and Python",
-};
+
 
 const work: Work = {
   path: "/work",
@@ -232,12 +227,5 @@ const work: Work = {
   description: "Energy system optimization projects",
 };
 
-const gallery: Gallery = {
-  path: "/gallery",
-  label: "Gallery",
-  title: "Gallery - Abdelrahman Ibrahim",
-  description: "Project photos",
-  images: [],
-};
 
 export { person, social, newsletter, home, about, blog, work, gallery };
