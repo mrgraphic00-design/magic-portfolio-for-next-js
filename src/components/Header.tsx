@@ -91,7 +91,7 @@ export const Header = () => {
           >
             <Row gap="4" vertical="center" textVariant="body-default-s" suppressHydrationWarning>
               {routes["/"] && (
-                <ToggleButton prefixIcon="home" href="/" selected={pathname === "/"} />
+                <ToggleButton prefixIcon="home" href="/" selected={pathname === "/"} aria-label="Home" />
               )}
               <Line background="neutral-alpha-medium" vert maxHeight="24" />
               {routes["/about"] && (
@@ -109,6 +109,7 @@ export const Header = () => {
                       prefixIcon="person"
                       href="/about"
                       selected={pathname === "/about"}
+                      aria-label={about.label}
                     />
                   </Row>
                 </>
@@ -128,6 +129,7 @@ export const Header = () => {
                       prefixIcon="grid"
                       href="/work"
                       selected={pathname.startsWith("/work")}
+                      aria-label={work.label}
                     />
                   </Row>
                 </>
@@ -147,6 +149,7 @@ export const Header = () => {
                       prefixIcon="book"
                       href="/blog"
                       selected={pathname.startsWith("/blog")}
+                      aria-label={blog.label}
                     />
                   </Row>
                 </>
@@ -166,6 +169,7 @@ export const Header = () => {
                       prefixIcon="gallery"
                       href="/gallery"
                       selected={pathname.startsWith("/gallery")}
+                      aria-label={gallery.label}
                     />
                   </Row>
                 </>

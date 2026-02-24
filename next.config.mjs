@@ -12,6 +12,9 @@ const nextConfig = {
   reactStrictMode: true,
   poweredByHeader: false,
   compress: true,
+  experimental: {
+    optimizePackageImports: ["@once-ui-system/core"],
+  },
   images: {
     formats: ["image/avif", "image/webp"],
     minimumCacheTTL: 2592000,
