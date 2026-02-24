@@ -17,6 +17,7 @@ import { Footer, Header, RouteGuard, Providers } from "@/components";
 import { baseURL, effects, fonts, style, dataStyle, home } from "@/resources";
 import { person } from "@/resources";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export async function generateMetadata() {
   return Meta.generate({
@@ -167,6 +168,7 @@ export default async function RootLayout({
           </Flex>
           <Footer />
           <Analytics />
+          <SpeedInsights />
         </Column>
       </Providers>
     </Flex>
