@@ -145,8 +145,8 @@ export const Header = () => {
                     <ToggleButton
                       prefixIcon="grid"
                       href="/work"
+                      label={work.label}
                       selected={pathname.startsWith("/work")}
-                      aria-label={work.label}
                     />
                   </Row>
                 </>
