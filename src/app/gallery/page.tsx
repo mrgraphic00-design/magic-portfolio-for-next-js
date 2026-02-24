@@ -1,6 +1,8 @@
 import { Flex, Meta, Schema } from "@once-ui-system/core";
-import GalleryView from "@/components/gallery/GalleryView";
+import dynamic from "next/dynamic";
 import { baseURL, gallery, person } from "@/resources";
+
+const GalleryView = dynamic(() => import("@/components/gallery/GalleryView"));
 
 export async function generateMetadata() {
   return Meta.generate({
