@@ -20,8 +20,6 @@ const routes: RoutesConfig = {
   "/": true,
   "/about": true,
   "/work": true,
-  "/blog": false,
-  "/gallery": false,
 };
 
 const display: DisplayConfig = {
@@ -105,8 +103,8 @@ const effects: EffectsConfig = {
     radius: 100,
   },
   gradient: {
-    display: false,
-    opacity: 100,
+    display: true,
+    opacity: 60,
     x: 50,
     y: 60,
     width: 100,
