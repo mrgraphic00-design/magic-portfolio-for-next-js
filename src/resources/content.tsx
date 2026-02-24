@@ -88,19 +88,9 @@ const about: About = {
     description: (
       <>
         <Text as="p">
-          I am currently pursuing a Master of Engineering in International Energy Engineering at OTH
-          Amberg-Weiden, Germany (expected graduation: Autumn 2026), with a strong focus on energy
-          management, smart grids, and solar energy integration. My studies emphasize the
-          development of sustainable and intelligent energy systems that support the transition
-          toward a cleaner and more efficient global energy landscape.
-        </Text>
-        <Text as="p">
-          With a background in Mechanical Engineering, I bring a solid technical foundation in
-          power generation, industrial systems, and process optimization. My academic and
-          professional experiences have strengthened my expertise in energy system analysis,
-          renewable integration, and data-driven energy management solutions. I am particularly
-          interested in leveraging digital tools and automation to enhance the performance and
-          reliability of modern energy infrastructures.
+          M.Eng. candidate in International Energy Engineering with a background in Mechanical Engineering. 
+          Focused on the intersection of renewable energy integration and digitalization.
+          Expert in optimizing energy systems through smart grids and data-driven management to accelerate the global energy transition.
         </Text>
       </>
     ),
