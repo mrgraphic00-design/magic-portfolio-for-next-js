@@ -15,6 +15,7 @@ import {
 } from "@once-ui-system/core";
 import { Footer, Header, RouteGuard, Providers } from "@/components";
 import { baseURL, effects, fonts, style, dataStyle, home } from "@/resources";
+import { person } from "@/resources";
 
 export async function generateMetadata() {
   return Meta.generate({
@@ -45,6 +46,7 @@ export default async function RootLayout({
       )}
     >
       <head>
+        <link rel="preload" href={person.avatar} as="image" />
         <script
           id="theme-init"
           dangerouslySetInnerHTML={{

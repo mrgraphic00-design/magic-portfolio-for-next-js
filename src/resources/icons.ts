@@ -23,18 +23,13 @@ import {
 } from "react-icons/pi";
 
 import {
-  SiJavascript,
-  SiNextdotjs,
-  SiFigma,
-  SiSupabase,
   SiPython,
   SiPandas,
   SiNumpy,
-  SiLinux,
   SiAutocad,
 } from "react-icons/si";
 
-import { FaDiscord, FaGithub, FaLinkedin, FaX, FaThreads, FaInstagram, FaXTwitter, FaFacebook, FaPinterest, FaWhatsapp, FaReddit, FaTelegram, } from "react-icons/fa6";
+import { FaGithub, FaLinkedin, FaXTwitter, FaFacebook, FaPinterest, FaWhatsapp, FaReddit, FaTelegram, } from "react-icons/fa6";
 
 export const iconLibrary: Record<string, IconType> = {
   arrowUpRight: HiArrowUpRight,
@@ -48,32 +43,23 @@ export const iconLibrary: Record<string, IconType> = {
   calendar: HiCalendarDays,
   home: PiHouseDuotone,
   gallery: PiImageDuotone,
-  discord: FaDiscord,
   eye: HiOutlineEye,
   eyeOff: HiOutlineEyeSlash,
   github: FaGithub,
   linkedin: FaLinkedin,
-  x: FaX,
   twitter: FaXTwitter,
-  threads: FaThreads,
   arrowUpRightFromSquare: HiArrowTopRightOnSquare,
   document: HiOutlineDocument,
   rocket: HiOutlineRocketLaunch,
-  javascript: SiJavascript,
-  nextjs: SiNextdotjs,
-  supabase: SiSupabase,
-  figma: SiFigma,
   python: SiPython,
   pandas: SiPandas,
   numpy: SiNumpy,
-  linux: SiLinux,
   autocad: SiAutocad,
   facebook: FaFacebook,
   pinterest: FaPinterest,
   whatsapp: FaWhatsapp,
   reddit: FaReddit,
   telegram: FaTelegram,
-  instagram: FaInstagram,
   phone: HiPhone,
 };
 
