@@ -1,7 +1,7 @@
 ---
 title: "Energy Management System — Residential City Quarter"
-publishedAt: "2025-06-01"
-summary: "Cost- and CO₂-optimised hybrid energy system design for a residential district using Python, Pandas, and NumPy."
+publishedAt: "2025-01-20"
+Summary: "Cost- and CO₂-optimised hybrid energy system design for a residential district using Python, Pandas, and NumPy."
 images:
   - "/images/projects/master-thesis.jpg"
 ---
@@ -13,7 +13,7 @@ Designed and analysed a hybrid energy management system (EMS) for a residential 
 ## Objectives
 
 - Develop a cost-optimised and CO₂-minimised dispatch strategy for a multi-source energy system
-- Integrate renewable sources (PV, wind) with conventional backup and storage
+- Integrate renewable sources,(PV) with conventional backup and storage
 - Quantify the trade-off between economic and ecological optimisation targets
 
 ## Methodology
@@ -27,23 +27,23 @@ Designed and analysed a hybrid energy management system (EMS) for a residential 
 
 - Modelled the hybrid system consisting of:
   - Rooftop solar PV arrays
-  - Battery energy storage system (BESS)
-  - Gas boiler and combined heat and power (CHP) unit
+  - Heat Pump
+  - Gas/Biomass boiler and combined heat and power (CHP) unit
   - Grid connection (import/export)
 - Formulated a linear programming optimisation problem to minimise total cost while respecting technical and environmental constraints
 
 ### Optimisation & Results
 
-- Implemented the optimisation in **Python** (SciPy/PuLP linear solver)
-- Achieved up to **18% reduction in annual energy costs** compared to a grid-only baseline
-- Demonstrated a **22% decrease in CO₂ emissions** through optimised renewable dispatch and storage scheduling
+- Implemented the optimisation in **Python** (CBC linear solver)
+- Achieved up to **5% reduction in annual energy costs** compared to a grid-only baseline
+- Demonstrated a **20% decrease in CO₂ emissions** through optimised renewable dispatch and storage scheduling
 
 ## Technologies Used
 
 - **Python** — core modelling and optimisation
 - **Pandas & NumPy** — data processing and time-series analysis
 - **Matplotlib** — visualisation of load profiles, cost curves, and dispatch schedules
-- **PuLP / SciPy** — linear programming solver
+- **CBC** — linear programming solver
 
 ## Key Takeaways
 
@@ -53,4 +53,4 @@ This project reinforced the importance of data-driven decision-making in energy 
 
 **Status:** Completed  
 **Institution:** OTH Amberg-Weiden  
-**Semester:** Summer 2025
+**Semester:** Winter 2024/2025
