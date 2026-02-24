@@ -20,8 +20,6 @@ const routes: RoutesConfig = {
   "/": true,
   "/about": true,
   "/work": true,
-  "/blog": false,
-  "/gallery": false,
 };
 
 const display: DisplayConfig = {
@@ -194,8 +192,6 @@ const schema: SchemaConfig = {
 // social links
 const sameAs: SameAsConfig = {
   linkedin: "https://www.linkedin.com/in/abdelrahman-ibrahim-0b9b80166/",
-  threads: "",
-  discord: "",
 };
 
 // social sharing configuration for blog posts
