@@ -63,7 +63,7 @@ const home: Home = {
     title: <>Master's Thesis</>,
     href: "/work/master-thesis-energy-optimization",
   },
-  subline: <>Master's Student in Energy Engineering & Mechanical Engineer</>,
+  subline: <>Energy Engineer (M.Eng.) | Mechanical Engineer (B.Sc.) </>,
 };
 
 const about: About = {
