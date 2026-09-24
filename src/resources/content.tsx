@@ -5,7 +5,7 @@ const person: Person = {
   firstName: "Abdelrahman",
   lastName: "Ibrahim",
   name: "Abdelrahman Ibrahim",
-  role: "Master's Student in Energy Engineering & Mechanical Engineer",
+  role: "Energy Engineer (M.Eng.) | Mechanical Engineer (B.Sc.)",
   avatar: "/images/avatar.jpg",
   email: "abd.m.elsayed@gmail.com",
   location: "Europe/Berlin",
@@ -56,7 +56,7 @@ const home: Home = {
   image: "/images/og/home.jpg",
   label: "Home",
   title: "Abdelrahman Ibrahim",
-  description: "Master's Student in Energy Engineering & Mechanical Engineer",
+  description: "Energy Engineer (M.Eng.) | Mechanical Engineer (B.Sc.)",
   headline: <>Abdelrahman Ibrahim</>,
   featured: {
     display: true,
@@ -70,7 +70,7 @@ const about: About = {
   path: "/about",
   label: "About",
   title: "About - Abdelrahman Ibrahim",
-  description: "Master's Student in Energy Engineering at OTH Amberg-Weiden",
+  description: "Energy Engineer (M.Eng.) | Mechanical Engineer (B.Sc.)",
   tableOfContent: {
     display: true,
     subItems: true,
@@ -88,9 +88,9 @@ const about: About = {
     description: (
       <>
         <Text as="p">
-          M.Eng. candidate in International Energy Engineering with a background in Mechanical Engineering. 
-          Focused on the intersection of renewable energy integration and digitalization.
-          Expert in optimizing energy systems through smart grids and data-driven management to accelerate the global energy transition.
+          M.Eng. in International Energy Engineering (OTH Amberg-Weiden, Germany) with a Bachelor's degree in Mechanical Engineering. 
+          I focus on the intersection of renewable energy integration and digitalization, specializing in the modeling and optimization of integrated energy systems using Python and PyPSA.
+          My work spans solar PV, battery storage, e-mobility, and sector coupling, applying data-driven analysis to support the energy transition.
         </Text>
       </>
     ),
@@ -125,12 +125,10 @@ const about: About = {
         name: "OTH Amberg-Weiden",
         description: (
           <>
-            <strong>M.Eng. International Energy Engineering</strong> — 03/2024 – Present (Expected:
-            Aug 2026).
+            <strong>M.Eng. International Energy Engineering</strong> — 03/2024 – 10/2026
             {" "}Key projects: Energy Management System Design for a Residential City Quarter
             (Python, Pandas, NumPy); Solar PV System Simulation — economical vs. ecological
-            configuration comparison (Polysun); Master's Thesis — Techno-economic optimisation of
-            OTH Amberg campus energy system using PyPSA.
+            configuration comparison (Polysun); Master's Thesis — Techno-Economic Optimization of a Sector-Coupled Campus Microgrid: Integration of E-Mobility and Energy Storage Systems
           </>
         ),
       },
